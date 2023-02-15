@@ -97,11 +97,39 @@ body{
 
 }
 
+.projectCard{
+
+}
+
+.projectCard-title{
+
+}
+
+.projectCard-content{
+
+}
+
 .announcements{
 
 }
 
-.announcements-list{
+.announcements-heading{
+
+}
+
+.announcements-card{
+
+}
+
+.announcement-listItem{
+
+}
+
+.announcement-title{
+
+}
+
+.announcement-content{
 
 }
 
@@ -109,6 +137,22 @@ body{
 
 }
 
-.trending-list{
+.trending-heading{
 
+}
+
+.trending-card{
+
+}
+
+.trending-listItem{
+
+}
+
+.trending-name{
+
+}
+
+.trending-subtitle{
+    
 }
