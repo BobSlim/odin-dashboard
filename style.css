@@ -50,14 +50,11 @@ table {
 
 body{
     --sidebar-maxWidth: 240px;
-    --header-maxHeight: 180px;
 
     height: 100vh;
     width: 100vw;
 
-    display: grid;
-    grid-template-columns: minmax(auto, var(--sidebar-maxWidth)) 1fr;
-    grid-template-rows: minmax(auto, var(--header-maxHeight)) 1fr;
+    display: flex;
 }
 
 .sidebar{
@@ -70,22 +67,30 @@ body{
     max-width: var(--sidebar-maxWidth);
 }
 
-.header{
-    padding: 2rem;
-}
 
 .main{
-    padding: 2rem;
+    --main-boxShadow: 0.5rem 0.5rem 0.25rem gray;
+    --header-maxHeight: 180px;
 
     background-color: lightgray;
-    
+    flex: 1;
+
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto auto;
+    grid-template-rows: minmax(auto, var(--header-maxHeight)) auto auto;
+}
+
+.header{
+    background-color: white;
+
+    grid-column: 1/3;
+    padding: 2rem;
+
+    box-shadow: var(--main-boxShadow);
 }
 
 .projects{
-    grid-row: 1/3;
+    grid-row: 2/4;
 }
 
 .projects-grid{
