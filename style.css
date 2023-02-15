@@ -55,6 +55,16 @@ body{
     width: 100vw;
 
     display: flex;
+
+    font-family: sans-serif;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1.5rem;
 }
 
 .sidebar{
@@ -101,19 +111,11 @@ body{
 
 }
 
-.projectCard-title{
-
-}
-
 .projectCard-content{
 
 }
 
 .announcements{
-
-}
-
-.announcements-heading{
 
 }
 
@@ -137,10 +139,6 @@ body{
 
 }
 
-.trending-heading{
-
-}
-
 .trending-card{
 
 }
@@ -154,5 +152,5 @@ body{
 }
 
 .trending-subtitle{
-    
+
 }
