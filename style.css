@@ -49,14 +49,15 @@ table {
 
 
 body{
-    --sidebar-maxWidth: 400px;
+    --sidebar-maxWidth: 240px;
+    --header-maxHeight: 180px;
 
     height: 100vh;
     width: 100vw;
 
     display: grid;
     grid-template-columns: minmax(auto, var(--sidebar-maxWidth)) 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: minmax(auto, var(--header-maxHeight)) 1fr;
 }
 
 .sidebar{
