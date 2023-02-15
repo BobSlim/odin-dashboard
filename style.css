@@ -65,6 +65,11 @@ h1{
 
 h2{
     font-size: 1.5rem;
+    margin: 0.5rem 0px;
+}
+
+p{
+    color: gray;
 }
 
 .sidebar{
@@ -79,7 +84,7 @@ h2{
 
 
 .main{
-    --main-boxShadow: 0.5rem 0.5rem 0.25rem gray;
+    --main-boxShadow: 1px 1px 2px gray;
     --header-maxHeight: 180px;
 
     background-color: lightgray;
@@ -88,6 +93,17 @@ h2{
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: minmax(auto, var(--header-maxHeight)) auto auto;
+}
+
+.main .card{
+    --card-borderRadius: 0.5rem;
+    
+    background-color: white;
+    border-radius: var(--card-borderRadius);
+    box-shadow: var(--main-boxShadow);
+
+    margin: 1rem;
+    padding: 2rem;
 }
 
 .header{
@@ -107,8 +123,8 @@ h2{
 
 }
 
-.projectCard{
-
+.projects .card{
+    border-left: var(--card-borderRadius) solid orange;
 }
 
 .projectCard-content{
