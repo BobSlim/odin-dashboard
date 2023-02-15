@@ -1,5 +1,12 @@
-.sidebar{
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
 
+.sidebar{
+    background-color: teal;
+    grid-row: 1/3;
 }
 
 .header{
@@ -7,10 +14,18 @@
 }
 
 .main{
-
+    background-color: gray;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .projects{
+    grid-row: 1/3;
+}
+
+.projects-grid{
 
 }
 
@@ -18,6 +33,14 @@
 
 }
 
+.announcements-list{
+
+}
+
 .trending{
-    
+
+}
+
+.trending-list{
+
 }
