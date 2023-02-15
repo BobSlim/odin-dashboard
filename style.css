@@ -51,6 +51,9 @@ table {
 body{
     --sidebar-maxWidth: 400px;
 
+    height: 100vh;
+    width: 100vw;
+
     display: grid;
     grid-template-columns: minmax(auto, var(--sidebar-maxWidth)) 1fr;
     grid-template-rows: 1fr 1fr;
