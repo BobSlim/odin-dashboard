@@ -149,8 +149,8 @@ p{
 
 }
 
-.announcements-card{
-
+.announcements .card{
+    font-size: 0.75em;
 }
 
 .announcement-listItem{
