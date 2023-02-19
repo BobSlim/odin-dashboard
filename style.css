@@ -128,8 +128,10 @@ p{
 }
 
 .projects-grid{
+    --grid-maxWidth: 360px; 
+    
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(var(--grid-maxWidth), 1fr));
     grid-template-rows: repeat(3, 1fr);
     grid-auto-rows: 1fr;
 }
@@ -142,7 +144,6 @@ p{
 
 }
 
-<<<<<<< Updated upstream
 .projectCard-icons{
     display: flex;
     justify-content: right;
@@ -151,10 +152,12 @@ p{
 }
 
 .projectCard-icons img{
-    height: 2rem;
-    width: auto;
+    height: auto;
 
-    margin: 1rem;
+    width: 20%;
+    max-width: 2rem;
+
+    margin-left: min(10%, 2rem);
     color: gray;
 }
 
