@@ -144,8 +144,6 @@ p{
 
 }
 
-<<<<<<< Updated upstream
-=======
 .projectCard-icons{
     display: flex;
     justify-content: right;
@@ -163,7 +161,6 @@ p{
     color: gray;
 }
 
->>>>>>> Stashed changes
 .announcements{
     height: auto;
     font-size: 0.75em;
