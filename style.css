@@ -148,13 +148,15 @@ p{
     justify-content: right;
 }
 
-.projectCard-icons img{
-    height: auto;
+.projectCard-icons *{
+    display: block;
 
-    width: 20%;
+    max-height: 1.5rem;
     max-width: 1.5rem;
 
     margin-left: min(10%, 1.5rem);
+
+    fill: gray;
 }
 
 .rightBar{
