@@ -129,8 +129,7 @@ p{
     
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(var(--grid-maxWidth), 1fr));
-    grid-template-rows: repeat(3, 1fr);
-    grid-auto-rows: 1fr;
+    grid-template-rows: repeat(auto-fit, minmax(120px, 1fr));
 }
 
 .projects .card{
