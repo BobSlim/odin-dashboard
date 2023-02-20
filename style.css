@@ -134,25 +134,28 @@ p{
 
 .projects .card{
     border-left: var(--card-borderRadius) solid orange;
+    display: flex;
+    flex-direction: column;
+}
+
+.projectCard-content{
+    margin-bottom: auto;
+    flex: 1;
 }
 
 .projectCard-icons{
     display: flex;
     justify-content: right;
-
-    fill: gray;
 }
 
 .projectCard-icons img{
     height: auto;
 
     width: 20%;
-    max-width: 2rem;
+    max-width: 1.5rem;
 
-    margin-left: min(10%, 2rem);
-    color: gray;
+    margin-left: min(10%, 1.5rem);
 }
-
 
 .rightBar{
     display: flex;
@@ -161,23 +164,6 @@ p{
 
     grid-row: -1 / 1;
     grid-column: -2 / -1;
-}
-
-.projectCard-icons{
-    display: flex;
-    justify-content: right;
-
-    fill: gray;
-}
-
-.projectCard-icons img{
-    height: auto;
-
-    width: 20%;
-    max-width: 2rem;
-
-    margin-left: min(10%, 2rem);
-    color: gray;
 }
 
 .announcements{
