@@ -288,6 +288,14 @@ svg{
     flex: 1;
 }
 
+.announcement-listItem{
+    margin: 1rem;
+}
+
+.announcement-divider{
+    border-bottom: 1px solid gray;
+}
+
 .trending{
     height: auto;
     font-size:0.75em;
