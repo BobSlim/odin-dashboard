@@ -74,18 +74,45 @@ h2{
     margin: 0.5em 0px;
 }
 
-p{
-    color: gray;
-}
 
 .sidebar{
 
+    --sidebar-color: white;
+
     padding: 2rem;
 
-    background-color: aqua;
+    background-color: blue;
     grid-row: var(--sidebar-gridRows);
 
     max-width: var(--sidebar-maxWidth);
+
+    color: var(--sidebar-color);
+}
+
+.sidebar-item{
+    display: flex;
+    flex-direction: row;
+
+    font-size: 1.5rem;
+    font-weight: 800;
+
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.sidebar-item:hover{
+    background-color: navy;
+}
+
+.sidebar-item svg{
+    height: 1em;
+    width: 1em;
+    
+    fill: var(--sidebar-color)
+}
+
+.sidebar-item p{
+    margin-left: 1rem;
 }
 
 .header{
@@ -141,6 +168,7 @@ p{
 .projectCard-content{
     margin-bottom: auto;
     flex: 1;
+    color: gray;
 }
 
 .projectCard-icons{
