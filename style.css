@@ -79,14 +79,21 @@ h2{
 
     --sidebar-color: white;
 
-    padding: 2rem;
-
     background-color: blue;
     grid-row: var(--sidebar-gridRows);
 
-    max-width: var(--sidebar-maxWidth);
+    max-width: min-content;
 
     color: var(--sidebar-color);
+}
+
+.sidebar-item>h1{
+    padding: 0px;
+}
+
+.sidebar-item:first-child>svg{
+    height: 2em;
+    width: 2em;
 }
 
 .sidebar-item{
@@ -97,7 +104,7 @@ h2{
     font-weight: 800;
 
     align-items: center;
-    padding: 0.5rem;
+    padding: 1rem 2rem;
 }
 
 .sidebar-item:hover{
