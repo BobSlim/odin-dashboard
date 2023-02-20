@@ -130,14 +130,84 @@ svg{
     background-color: white;
 
     width: auto;
-    padding: 2rem;
+    padding: 1rem;
 
     box-shadow: var(--main-boxShadow);
     position: relative; /* enables box-shadow to show over sibling .main */
 
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto max-content;
     grid-template-rows: auto auto;
+    gap: 1rem;
+}
+
+.header #form{
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+}
+
+.header #form svg{
+    margin-right: 1rem;
+}
+
+#query{
+    flex: 1;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.header-profile{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.header-profile > *{
+    padding: 1rem;
+}
+
+.header-profile img{
+    height: 2rem;
+    width: auto;
+    border-radius: 50%;
+}
+
+.header-welcome{
+    display: grid;
+    grid-template-columns: min-content max-content;
+    grid-template-rows: auto auto;
+    margin-left: 3rem;
+}
+
+.header-welcome img{
+    grid-row: 1 / 3;
+    height: 4rem;
+    width: auto;
+    border-radius: 50%;
+
+    margin-right: 2rem;
+}
+
+.header-welcomeName{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.header-buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-button{
+    flex: 0 1 1;
+
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+    background-color: blue;
+    color: white;
 }
 
 .main{
